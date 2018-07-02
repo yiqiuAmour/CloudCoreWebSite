@@ -3,9 +3,8 @@ jQuery(document).ready(function() {
 
 
     /* ------- Preloader ------ */
-    jQuery(window).load(function() {
-        jQuery(".status").fadeOut();
-        jQuery(".preloader").delay(1000).fadeOut("slow");
+    $(window).load(function(){
+        $('.preloader').delay(1000).slideUp('slow'); // set duration in brackets
     });
 
     /* -------- Appears Menu 滚动显示scroll ------ */
@@ -23,10 +22,10 @@ jQuery(document).ready(function() {
     });
 
     /* --------- One Page Navigation 页内锚点导航 -------- */
-    $('#collapsingNavbar').onePageNav({
-        currentClass: 'active',
-        scrollSpeed: 500,
-        easing: 'linear'
-    });
+    // $('#collapsingNavbar').onePageNav({
+    //     currentClass: 'active',
+    //     scrollSpeed: 500,
+    //     easing: 'linear'
+    // });
 
 });

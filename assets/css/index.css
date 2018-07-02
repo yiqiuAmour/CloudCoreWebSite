@@ -1317,7 +1317,7 @@ header.page-header .main-menu.minified{
     background-color: #de5c39;
 }
 
-.preloader {
+/*.preloader {
     position: fixed;
     top: 0;
     left: 0;
@@ -1342,6 +1342,108 @@ header.page-header .main-menu.minified{
     -webkit-background-size: cover;
     background-size: cover;
     margin: -70px 0 0 -70px;
+}*/
+
+/*---------------------------------------
+  PRE LOADER
+-----------------------------------------*/
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: none repeat scroll 0 0 #ffffff;
+}
+
+.spinner {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    position: relative;
+}
+
+.spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45px;
+    height: 45px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 1px solid #959595;
+    border-top-color: #ffffff;
+    animation: spinner .9s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+    to {transform: rotate(360deg);}
+}
+
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+}
+
+/*---------------------------------------
+  HOME
+-----------------------------------------*/
+
+#home {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    padding-top: 10em;
+}
+
+#home h1 {
+    color: #ffffff;
+    font-size: 6em;
+    line-height: 1.2em;
+    font-weight: 200;
+}
+
+#home p {
+    color: rgba(250,250,250,0.7);
+}
+
+#home .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+}
+
+#home video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
 }
 
 .owl-theme .owl-controls {
