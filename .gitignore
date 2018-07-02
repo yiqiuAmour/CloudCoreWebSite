@@ -20,6 +20,7 @@ node_modules/
 bower_components/
 angular.xcodeproj
 .idea
+.idea/
 *.iml
 .agignore
 .lvimrc
