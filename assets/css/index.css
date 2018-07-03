@@ -916,7 +916,7 @@ header.page-header .main-menu.minified{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(185, 39, 99, 0.13);
+    background-color: rgba(0, 0, 0, 0.60);
     display: table;
     opacity: 0;
     -webkit-transition: all .3s;
