@@ -354,10 +354,15 @@ a:active{
     background: #150f14;
     padding: 80px 0;
 }
-section#services {
+section#services{
     background: #150f14;
     padding: 100px 0;
 }
+section#about,
+section#portfolio {
+    background: inherit;
+}
+
 .btn-primary {
     color: #fff;
     border-radius: 0;
@@ -890,6 +895,19 @@ header.page-header .main-menu.minified{
     /* border: 1px solid #988594; */
     width: 100%;
     /* opacity: .5; */
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -ms-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+
+.portfolio-item:hover img{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .portfolio-items .portfolio-item .portfolio-details-wrapper{
@@ -973,9 +991,19 @@ header.page-header .main-menu.minified{
 
 .portfolio-item .portfolio-details h3{
     text-align: center;
-    font-size: 18px;
+    font-size: 28px;
     margin-top: 0;
     margin-bottom: 5px;
+    /*-webkit-transition: all .3s;*/
+    /*-moz-transition: all .3s;*/
+    /*-ms-transition: all .3s;*/
+    /*-o-transition: all .3s;*/
+    /*transition: all .3s;*/
+    display: none;
+}
+
+.portfolio-item:hover .portfolio-details h3{
+    display: block;
 }
 
 .portfolio-item .portfolio-details p{
