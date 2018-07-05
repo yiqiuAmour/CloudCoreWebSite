@@ -86,4 +86,18 @@ jQuery(document).ready(function() {
     //     $this.addClass('selected');
     // });
 
+
+    var svgVobj = new Vivus('svg-continer', {
+        file: 'assets/images/CloudcoreAI_animated.svg',
+        // start: 'manual',
+        onReady: function (myVivus) {
+            // `el` property is the SVG element
+            // myVivus.el.setAttribute('height', 'auto');
+            // svgVobj.start(1);
+        }},function () {
+        $('#svg-continer').addClass('done');
+    });
+
+
+
 });

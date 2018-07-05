@@ -11,13 +11,43 @@
     <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="assets/css/elegant_font/style.css"/>
     <link rel="stylesheet" href="assets/css/animate.css">
+    <script src="http://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+    <style>
+        #svg-continer>svg{
+            stroke-width: 3;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-miterlimit: 10;
+        }
+        #svg-continer>svg *{
+            fill: #fff;
+            stroke: #fff;
+            fill-opacity: 0;
+            transition: fill-opacity 1s;
+        }
+        #svg-continer.done>svg{
+            stroke-width: 1;
+        }
+        #svg-continer.done>svg *{
+            fill-opacity: 1;
+            /*-webkit-transition: all .5s;*/
+            /*-moz-transition: all .5s;*/
+            /*-ms-transition: all .5s;*/
+            /*-o-transition: all .5s;*/
+            /*transition: all .5s;*/
+        }
+    </style>
 </head>
 <body>
 <!-- PRE LOADER -->
-<div class="preloader">
-    <div class="spinner">
-        <span class="sk-inner-circle"></span>
-    </div>
+<!--<div class="preloader">-->
+    <!--<div class="spinner">-->
+        <!--<span class="sk-inner-circle"></span>-->
+    <!--</div>-->
+<!--</div>-->
+
+<div id="svg-continer" class="container">
+
 </div>
 
 <!-- Header End -->
@@ -27,7 +57,6 @@
         <div class="container">
             <a class="navbar-brand page-scroll" href="#slider">
                 <img class="logo" id="logo" src="assets/images/CloudcoreAI.svg" alt="logo">
-
             </a>
 
             <button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse"
@@ -82,7 +111,7 @@
 
     <!-- Video -->
     <video controls autoplay loop muted>
-        <source src="assets/videos/video.mp4" type="video/mp4">
+        <!--<source src="assets/videos/video.mp4" type="video/mp4">-->
         Your browser does not support the video tag.
     </video>
 </section>
@@ -429,6 +458,5 @@
 <script src="assets/js/isotope.pkgd.min.js"></script>
 <script src="assets/js/wow.min.js"></script>
 <script src="index.js"></script>
-
 </body>
 </html>
