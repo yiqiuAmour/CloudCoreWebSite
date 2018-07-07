@@ -1,7 +1,6 @@
 jQuery(document).ready(function() {
     "use strict";
 
-
     /* ------- Preloader ------ */
     $(window).load(function(){
         $('.preloader').delay(250).slideUp('slow'); // set duration in brackets
@@ -72,32 +71,25 @@ jQuery(document).ready(function() {
         return false;
     });
 
-    // var $optionSets = $('#portfolio-filter ul'),
-    //     $optionLinks = $optionSets.find('a');
-    //
-    // $optionLinks.on('click',function(){
-    //     var $this = $(this);
-    //     // don't proceed if already selected
-    //     if ( $this.hasClass('selected') ) {
-    //         return false;
-    //     }
-    //     var $optionSet = $this.parents('#portfolio-filter ul');
-    //     $optionSet.find('.selected').removeClass('selected');
-    //     $this.addClass('selected');
-    // });
+    var $optionSets = $('#portfolio-filter ul'),
+        $optionLinks = $optionSets.find('a');
 
+    $optionLinks.on('click',function(){
+        var $this = $(this);
+        // don't proceed if already selected
+        if ( $this.hasClass('selected') ) {
+            return false;
+        }
+        var $optionSet = $this.parents('#portfolio-filter ul');
+        $optionSet.find('.selected').removeClass('selected');
+        $this.addClass('selected');
+    });
 
-    var svgVobj = new Vivus('svg-continer', {
+    var svgVobj2 = new Vivus('svg-continer-2', {
         file: 'assets/images/CloudcoreAI_animated.svg',
         // start: 'manual',
         onReady: function (myVivus) {
-            // `el` property is the SVG element
-            // myVivus.el.setAttribute('height', 'auto');
-            // svgVobj.start(1);
         }},function () {
-        $('#svg-continer').addClass('done');
+        $('#svg-continer-2').addClass('done');
     });
-
-
-
 });

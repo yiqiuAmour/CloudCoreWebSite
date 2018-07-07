@@ -10,7 +10,7 @@ body {
     line-height: 25px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    background: #111111;
+    background: #28292e;
 }
 
 html{
@@ -192,20 +192,35 @@ a:active{
     color: #fff !important;
 }
 .about-sec {
-    padding:100px 0;
+    padding: 10px 0 100px 0;
     color: #fff;
 }
 .info-section{
-    background: #111111;
+    background: #28292e;
     padding: 80px 0;
 }
 section#services{
-    background: #111111;
+    background: #28292e;
     padding: 100px 0;
 }
 section#about,
 section#portfolio {
     background: inherit;
+}
+
+.progress-hover{
+    margin-bottom: 40px;
+    width: 10px;
+    height: 2px;
+    background: #fff;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    -o-transition: all .4s linear;
+    transition: all .4s linear;
+}
+.wow:hover .progress-hover{
+    width: 30px;
 }
 
 .blurb-icon-left-square .icon{
@@ -302,10 +317,22 @@ section#portfolio {
 .section-header h2{
     /* font-weight: 700; */
     font-size: 48px;
-    color: #1DCB8B;
+    color: #fff;
     border-top: none;
     border-bottom: none;
     padding: 8px 10px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.section-header h2.water-mask{
+    font-size: 96px;
+    color: rgba(255,255,255,0.10);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 .section-header h1 span{
@@ -322,7 +349,7 @@ section#portfolio {
 
 .section-header p{
     color: #ffffff;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .section-header-parallax h1{
@@ -356,11 +383,11 @@ section#portfolio {
     padding: 10px 0 20px !important;
     margin-bottom: 0;
     z-index: 10;
-    /*-webkit-transition: all .35s;*/
-    /*-moz-transition: all .35s;*/
-    /*-ms-transition: all .35s;*/
-    /*-o-transition: all .35s;*/
-    /*transition: all .35s;*/
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    -ms-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
     -webkit-backface-visibility: hidden;
     /* border-bottom: #4e4e4e solid 1px; */
 }
@@ -391,11 +418,10 @@ header.page-header .main-menu{
     /*transition: all .3s;*/
     padding: 15px;
     text-transform: uppercase;
-
-
-    border-color: #1DCB8B;
-    border-style: solid;
+    border-color: #61BC46;
+    border-style: none;
     border-width: 0;
+    border-width: 0 0 2px 0;
 }
 
 .navbar-expand-md .navbar-nav .nav-link{
@@ -406,8 +432,8 @@ header.page-header .main-menu{
 .main-menu .navbar-nav li.active a{
     /*background-color: #fff;*/
     /*color: #000;*/
-    border-width: 0 0 2px 0;
-
+    /* border-width: 0 0 2px 0; */
+    border-style: solid;
 }
 
 .main-menu .navbar-nav li a:focus{
@@ -416,7 +442,7 @@ header.page-header .main-menu{
 
 
 .main-menu.minified{
-    background-color: #111111;
+    background-color: #28292e;
     padding: 0;
     position: fixed;
     border: none;
@@ -868,12 +894,13 @@ header.page-header .main-menu.minified{
 
 #home h1 {
     color: #ffffff;
-    font-size: 6em;
+    font-size: 60px;
     line-height: 1.2em;
-    font-weight: 200;
 }
 
 #home p {
+    font-size: 60px;
+    font-weight: 200;
     color: rgba(250,250,250,0.7);
 }
 
@@ -885,7 +912,7 @@ header.page-header .main-menu.minified{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.2);
 }
 
 #home video {
@@ -903,7 +930,7 @@ header.page-header .main-menu.minified{
 }
 
 footer{
-    background-color: #111111;
+    background-color: #28292e;
     padding: 0 15px 20px 15px;
     overflow: hidden;
 }
@@ -950,7 +977,7 @@ footer ul li a i{
     transition: all .3s;
 }
 .footer-container {
-    background-color: #111111;
+    background-color: #28292e;
     padding: 60px 30px 30px 30px;
 }
 
