@@ -42,7 +42,7 @@ header.page-header{
 }
 
 b, strong{
-    color: #1DCB8B;
+    color: #fff;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Asap', sans-serif;
@@ -197,7 +197,7 @@ a:active{
 }
 .info-section{
     background: #28292e;
-    padding: 80px 0;
+    /* padding: 80px 0; */
 }
 section#services{
     background: #28292e;
@@ -206,6 +206,21 @@ section#services{
 section#about,
 section#portfolio {
     background: inherit;
+}
+
+section#info p.text-primary{
+    letter-spacing: 0.58px;
+}
+
+section#info p.text-primary i{
+    font-size: 24px;
+    color: #3AD29F;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.product-img{
+    height: 130px;
 }
 
 .progress-hover{
@@ -321,7 +336,7 @@ section#portfolio {
     border-top: none;
     border-bottom: none;
     padding: 8px 10px;
-    margin-top: 50px;
+    padding-top: 50px;
     margin-bottom: 0;
 }
 
