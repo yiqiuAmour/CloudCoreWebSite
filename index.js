@@ -8,7 +8,7 @@ jQuery(document).ready(function() {
 
     /* -------- Appears Menu 滚动显示scroll ------ */
     $(window).on('ready , scroll', function() {
-        if ($(window).scrollTop() > 30) {
+        if ($(window).scrollTop() > 100) {
             $('.main-menu').addClass('minified');
         } else {
             $('.main-menu').removeClass('minified');
@@ -92,4 +92,9 @@ jQuery(document).ready(function() {
         }},function () {
         $('#svg-continer-2').addClass('done');
     });
+
+    // $('#footab a').on('mouseover mouseout', function (e) {
+    //     e.preventDefault();
+    //     $(this).tab('show')
+    // })
 });

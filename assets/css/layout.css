@@ -204,8 +204,9 @@ section#services{
     padding: 100px 0;
 }
 section#about,
+section#partner,
 section#portfolio {
-    background: inherit;
+    background: #28292e;
 }
 
 section#info p.text-primary{
@@ -237,6 +238,108 @@ section#info p.text-primary i{
 .wow:hover .progress-hover{
     width: 30px;
 }
+
+.partner-section{
+    padding-top: 60px;
+}
+
+.partner-box{
+    display: block;
+    overflow: hidden;
+    /* overflow-x: scroll; */
+    /*overflow-y: hidden;*/
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.partner-box .partner-slider{
+    /* height: 50px; */
+    /* display: flex; */
+    padding: 40px 0;
+}
+
+.partner-box .partner-slider img{
+    float: left;
+}
+
+.partner-box .partner-slider img:first-child{
+    padding-right: 100px;
+}
+
+@keyframes partner-slider-1{
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-3096px, 0, 0);
+        transform: translate3d(-3096px, 0, 0);
+    }
+}
+
+@keyframes partner-slider-2{
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-3096px, 0, 0);
+        transform: translate3d(-3096px, 0, 0);
+    }
+}
+
+@keyframes partner-slider-3{
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-3096px, 0, 0);
+        transform: translate3d(-3096px, 0, 0);
+    }
+}
+
+@keyframes partner-slider-4{
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-3096px, 0, 0);
+        transform: translate3d(-3096px, 0, 0);
+    }
+}
+/* x2 + 100 */
+.partner-box .partner-slider-1{
+    /*width: 2896px;*/
+    width: 6292px;
+    -webkit-animation: 40s partner-slider-1 linear infinite normal;
+    animation: 40s partner-slider-1 linear infinite normal;
+    position: relative;
+}
+.partner-box .partner-slider-2{
+    /*width: 3048px;*/
+    width: 6292px;
+    -webkit-animation: 40s partner-slider-2 linear infinite normal;
+    animation: 40s partner-slider-2 linear infinite normal;
+    position: relative;
+}
+.partner-box .partner-slider-3{
+    /*width: 2968px;*/
+    width: 6292px;
+    -webkit-animation: 40s partner-slider-3 linear infinite normal;
+    animation: 40s partner-slider-3 linear infinite normal;
+    position: relative;
+}
+.partner-box .partner-slider-4{
+    /*width: 3096px;*/
+    width: 6292px;
+    -webkit-animation: 40s partner-slider-4 linear infinite normal;
+    animation: 40s partner-slider-4 linear infinite normal;
+    position: relative;
+}
+
+
 
 .blurb-icon-left-square .icon{
     width: 70px;
@@ -395,7 +498,7 @@ section#info p.text-primary i{
     border-radius: 0;
     position: fixed;
     width: 100%;
-    padding: 10px 0 20px !important;
+    /* padding: 10px 0 20px !important; */
     margin-bottom: 0;
     z-index: 10;
     -webkit-transition: all .35s;
@@ -944,8 +1047,12 @@ header.page-header .main-menu.minified{
     transition: 1s opacity;
 }
 
+.partner-slider .venus-little-icon{
+    /*position: absolute;*/
+}
+
 footer{
-    background-color: #28292e;
+    background-color: #131313;
     padding: 0 15px 20px 15px;
     overflow: hidden;
 }
@@ -960,9 +1067,9 @@ footer .footer-logo{
 }
 
 footer p{
-    color: rgba(255,255,255,0.57);
-    margin-bottom: 15px;
-    font-size: 13px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: rgba(255,255,255,0.81);
 }
 
 footer ul {
@@ -992,7 +1099,7 @@ footer ul li a i{
     transition: all .3s;
 }
 .footer-container {
-    background-color: #28292e;
+    background-color: #131313;
     padding: 60px 30px 30px 30px;
 }
 
@@ -1274,3 +1381,319 @@ footer ul li a i{
     }
 
 }
+
+
+
+
+
+
+.venus-little-icon {
+    background-image: url(../images/partner/sprite.png);
+    background-position: 0px -50px;
+    background-size: 750px 750px;
+    width: 250px;
+    height: 50px;
+}
+
+.venus-little-icon.venus-1 {
+    display:inline-block;
+    background-position: 0px -50px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-10 {
+    display:inline-block;
+    background-position: -500px -50px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-11 {
+    display:inline-block;
+    background-position: 0px -100px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-12 {
+    display:inline-block;
+    background-position: 0px -150px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-13 {
+    display:inline-block;
+    background-position: 0px -200px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-14 {
+    display:inline-block;
+    background-position: -250px 0px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-15 {
+    display:inline-block;
+    background-position: -250px -50px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-16 {
+    display:inline-block;
+    background-position: -250px -100px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-17 {
+    display:inline-block;
+    background-position: -250px -150px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-18 {
+    display:inline-block;
+    background-position: -250px -200px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-19 {
+    display:inline-block;
+    background-position: 0px -250px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-2 {
+    display:inline-block;
+    background-position: -250px -250px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-20 {
+    display:inline-block;
+    background-position: 0px -300px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-21 {
+    display:inline-block;
+    background-position: -250px -300px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-22 {
+    display:inline-block;
+    background-position: 0px -350px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-23 {
+    display:inline-block;
+    background-position: -250px -350px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-24 {
+    display:inline-block;
+    background-position: 0px -400px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-25 {
+    display:inline-block;
+    background-position: -250px -400px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-26 {
+    display:inline-block;
+    background-position: 0px -450px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-27 {
+    display:inline-block;
+    background-position: -250px -450px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-28 {
+    display:inline-block;
+    background-position: -500px 0px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-29 {
+    display:inline-block;
+    background-position: 0px 0px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-3 {
+    display:inline-block;
+    background-position: -500px -100px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-30 {
+    display:inline-block;
+    background-position: -500px -150px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-31 {
+    display:inline-block;
+    background-position: -500px -200px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-32 {
+    display:inline-block;
+    background-position: -500px -250px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-33 {
+    display:inline-block;
+    background-position: -500px -300px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-34 {
+    display:inline-block;
+    background-position: -500px -350px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-35 {
+    display:inline-block;
+    background-position: -500px -400px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-36 {
+    display:inline-block;
+    background-position: -500px -450px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-37 {
+    display:inline-block;
+    background-position: 0px -500px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-38 {
+    display:inline-block;
+    background-position: -250px -500px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-39 {
+    display:inline-block;
+    background-position: -500px -500px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-4 {
+    display:inline-block;
+    background-position: 0px -550px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-40 {
+    display:inline-block;
+    background-position: -250px -550px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-41 {
+    display:inline-block;
+    background-position: -500px -550px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-42 {
+    display:inline-block;
+    background-position: 0px -600px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-43 {
+    display:inline-block;
+    background-position: -250px -600px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-5 {
+    display:inline-block;
+    background-position: -500px -600px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-6 {
+    display:inline-block;
+    background-position: 0px -650px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-7 {
+    display:inline-block;
+    background-position: -250px -650px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-8 {
+    display:inline-block;
+    background-position: -500px -650px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+.venus-little-icon.venus-9 {
+    display:inline-block;
+    background-position: 0px -700px;
+    background-size:750px 750px;
+    width: 250px;
+    height: 50px;
+}
+
