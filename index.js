@@ -89,12 +89,16 @@ jQuery(document).ready(function() {
         file: 'assets/images/CloudcoreAI_animated.svg',
         // start: 'manual',
         onReady: function (myVivus) {
-        }},function () {
+        }
+    }, function () {
         $('#svg-continer-2').addClass('done');
     });
 
-    // $('#footab a').on('mouseover mouseout', function (e) {
-    //     e.preventDefault();
-    //     $(this).tab('show')
-    // })
+    window.vvv = function () {
+        $('#svg-continer-2').removeClass('done');
+        svgVobj2.reset();
+        svgVobj2.play(1);
+    }
+
+
 });
