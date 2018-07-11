@@ -1369,7 +1369,14 @@ footer ul li a i{
     .contact-section .contact-address {
         margin-bottom: 50px;
     }
-
+    .section-header h2.water-mask.highlight-bg{
+        font-size: 2.8em;
+    }
+    h2.water-mask.highlight-bg+h2 {
+        padding-top: 1em;
+        margin-bottom: 2em;
+        font-size: 1.8em;
+    }
 
 }
 
@@ -1697,3 +1704,118 @@ footer ul li a i{
     height: 50px;
 }
 
+h2.highlight-bg {
+    font-size: 96px;
+    color: rgba(255,255,255,0.10);
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding-top:20px;
+}
+
+h2.highlight-bg+h2{
+    padding-top:70px;
+    margin-bottom: 100px;
+}
+
+.product-section{
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    padding-top: 125px;
+}
+
+.product-content{
+    justify-content: center;
+    padding:100px 0 200px 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.product-content img{
+    width:50%;
+    height:50%;
+
+}
+
+.product-section .overlay{
+    position: absolute;
+    top: 5em;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #131313;;
+}
+
+.title-img{
+    width: 100%;
+    margin-top:-10em
+}
+
+.product-content .product-footer{
+    width:20px;
+    height:2px;
+    background: #ffffff;
+    margin:0 auto;
+
+}
+
+.product-content .article-title > div{
+
+}
+
+.product-content .article-title > div h4{
+    font-size: 14px;
+    color: rgba(255,255,255,0.57);
+    margin:10px 0;
+}
+.product-content .article-title > div.active h4{
+    color: #FFFFFF;
+}
+
+.product-content .article-title > div.active .product_footer{
+    width:80px;
+    height:2px;
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+.product-content .article-title > div.active .product_footer+div{
+    display: inline-block;
+    width:120px;
+    height:1px;
+    background: rgba(255,255,255,0.20);
+    vertical-align: middle;
+}
+
+.product-content .article-title > div span{
+    margin-right:30px;
+}
+
+.product-content .article-content > div{
+    display: none;
+    margin:10px 0;
+}
+
+.product-content .article-content > div a{
+    border: 2px solid rgba(255,255,255,0.50);
+    width:180px;
+    height:50px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.81);
+    letter-spacing: 1px;
+    text-align: center;
+    display:block;
+    line-height:46px;
+    margin-top:30px;
+}
+
+
+.product-content .article-content > div.active{
+    display: block;
+}
