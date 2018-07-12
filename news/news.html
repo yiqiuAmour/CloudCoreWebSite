@@ -8,6 +8,7 @@
     <title>云核网络</title>
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/news.css">
     <link rel="stylesheet" href="../assets/css/font-awesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="../assets/css/animate.css">
 </head>
@@ -32,16 +33,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../index.html">首页</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">产品</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="../cases/cases.html">案例</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../products/products.html">产品</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../news/news.html">动态</a>
+                        <a class="nav-link" href="../cases/cases.html">案例</a>
                     </li>
-                    <li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">动态</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../about/about.html">我们</a>
                     </li>
@@ -52,15 +52,53 @@
 </header>
 <!-- Header End -->
 
-<section>
+<section id="news" class="bgSection news-section">
     <div class="container">
         <div class="row">
-            <div style="height: 500px"></div>
+            <!-- Section Header -->
+            <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown">
+                <h2 class="water-mask">Moments</h2>
+                <h2><span class="highlight-text">动态</span></h2>
+
+                <!--<p class="col-md-8 col-sm-10 col-xs-12 offset-md-2 offset-sm-1">Lorem ipsum dolor sit amet,-->
+                <!--consectetur adipisicing elit. Quod, nam corporis quas, saepe minima error aperiam dolorum aliquam,-->
+                <!--quis deserunt eos eius quisquam odio itaque.</p>-->
+            </div>
+            <!-- Section Header End -->
         </div>
+
+        <div class="row news-items">
+            <div class="news-item">
+                <img src="../assets/images/news/news_1.png" alt="">
+            </div>
+            <div class="news-item news-black">
+                <p>
+                    <b>08</b>
+                    <span>/01 2017</span>
+                </p>
+                <h4>2017年度优秀员工表彰大会</h4>
+                <div>2017年1月7-8日，云核网络2016年度优秀员工表彰大会在南京顺利召开。会议中，总经理戴林巧先生做了精彩致辞，罗勇先生进行了年......</div>
+                <a href="">查看详情</a>
+            </div>
+            <div class="news-item">
+                <img src="../assets/images/news/news_2.png" alt="">
+            </div>
+            <div class="news-item">
+
+            </div>
+            <div class="news-item">
+                <img src="../assets/images/news/news_3.png" alt="">
+            </div>
+            <div class="news-item">
+
+            </div>
+        </div>
+
+
     </div>
 </section>
 
-<footer>
+<footer class="news-footer">
     <div class="container">
         <div class="row footer">
             <div class="col-md-6 col-ms-6 col-xs-12">
@@ -87,7 +125,7 @@
 
 <script src="../assets/js/jquery-2.1.3.min.js"></script>
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
-<script src="demo.js"></script>
+<script src="news.js"></script>
 
 </body>
 </html>
