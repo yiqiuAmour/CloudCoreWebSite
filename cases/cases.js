@@ -69,6 +69,7 @@ jQuery(document).ready(function() {
                 queue: false
             }
         });
+        $(this).addClass('selected').siblings().removeClass('selected');
         return false;
     });
 
