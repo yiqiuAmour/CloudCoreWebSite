@@ -1,0 +1,19 @@
+.news-section{
+    padding:100px 0 0;
+}
+.news-footer{
+    margin-top:90px;
+}
+.news-items{
+    position: relative; text-align: center; margin: 0 auto;
+}
+.news-items .news-item{
+    width:30%;
+    padding:15px;
+}
+.news-items .news-item img{
+    width:314px;
+}
+.news-black{
+    background:#000;
+}
