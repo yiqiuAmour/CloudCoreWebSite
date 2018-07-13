@@ -195,6 +195,9 @@ a:active{
     padding: 10px 0 100px 0;
     color: #fff;
 }
+.about-sec .customized-text:hover,.info-section .row .text-center:hover{
+    background: #131313;
+}
 .info-section{
     background: #28292e;
     /* padding: 80px 0; */
@@ -205,7 +208,8 @@ section#services{
 }
 section#about,
 section#partner,
-section#portfolio {
+section#portfolio,
+section#download{
     background: #28292e;
 }
 
@@ -239,10 +243,20 @@ section#info p.text-primary i{
     width: 30px;
 }
 
-.partner-section{
+section#partner.partner-section{
     padding-top: 60px;
+    background: #fff;
 }
-
+.partner-section .section-header p{
+    color: rgba(0,0,0,0.85);
+}
+.partner-section .section-header h2{
+    color: rgba(0,0,0,0.85);
+    font-weight: 700;
+}
+.partner-section .section-header h2.water-mask{
+    color: rgba(0,0,0,0.10);
+}
 .partner-box{
     display: block;
     overflow: hidden;
@@ -266,6 +280,38 @@ section#info p.text-primary i{
     padding-right: 100px;
 }
 
+.download-section {
+    padding:30px 0;
+}
+
+.download-section  .container  .text-center{
+    display: flex;
+}
+
+.download-section p{
+    font-size:18px;
+    font-weight: 200;
+}
+
+.download-img{
+    width:96px;
+}
+
+.download-section .img-box{
+    text-align: right;
+}
+.goTop{
+    position: fixed;
+    bottom:100px;
+    right:0;
+    border: 2px solid rgba(255,255,255,0.50);
+    width:44px;
+    height:44px;
+    text-align: center;
+    line-height: 42px;
+    font-size: 30px;
+    display: none;
+}
 @keyframes partner-slider-1{
     0% {
         -webkit-transform: translate3d(0, 0, 0);
@@ -638,7 +684,7 @@ header.page-header .main-menu.minified{
 }
 
 .portfolio-section{
-    padding: 100px 0 0;
+    padding: 100px 0 20px;
 }
 
 .port-work-details .work-meta li a{
@@ -747,7 +793,7 @@ header.page-header .main-menu.minified{
 }
 
 .portfolio-items .portfolio-item{
-    width: 25%;
+    width: 50%;
     height: 280px;
     position: relative;
     overflow: hidden;
@@ -1168,6 +1214,10 @@ footer ul li a i{
     display:flex;
 }
 
+.index_button_box{
+    margin:30px auto 0;
+}
+
 /*product--start*/
 h2.highlight-bg {
     font-size: 96px;
@@ -1263,9 +1313,9 @@ h2.highlight-bg+h2{
     margin:10px 0;
 }
 
-.product-content .article-content > div a{
+a.button_box{
     border: 2px solid rgba(255,255,255,0.50);
-    width:180px;
+    width:12em;
     height:50px;
     font-size: 14px;
     color: rgba(255,255,255,0.81);
@@ -1273,14 +1323,26 @@ h2.highlight-bg+h2{
     text-align: center;
     display:block;
     line-height:46px;
-    margin-top:30px;
+    margin-top:20px;
 }
 
-
+.goTop {
+    bottom: 180px;
+}
 .product-content .article-content > div.active{
     display: block;
 }
 /*product--end*/
+
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1515,6 +1577,15 @@ h2.highlight-bg+h2{
     .footer > div:last-child > div div{
         color:rgba(255,255,255,0.6);
     }
+
+    .download-section .img-box{
+        text-align: center;
+        margin:20px 0;
+    }
+    .download-section .img-box+div{
+        margin:20px 0;
+    }
+
     /*产品与服务*/
     h2.water-mask.highlight-bg+h2 {
         padding-top: 1em;
@@ -1527,6 +1598,7 @@ h2.highlight-bg+h2{
     .section-header h2.water-mask{
         font-size: 2.8em;
     }
+
 }
 
 
