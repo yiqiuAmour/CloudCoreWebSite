@@ -1217,102 +1217,6 @@ footer ul li a i{
 .index_button_box{
     margin:30px auto 0;
 }
-
-/*product--start*/
-h2.highlight-bg {
-    font-size: 96px;
-    color: rgba(255,255,255,0.10);
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    padding-top:20px;
-}
-
-h2.highlight-bg+h2{
-    padding-top:70px;
-    margin-bottom: 100px;
-}
-
-.product-section{
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    position: relative;
-    padding-top: 125px;
-}
-
-.product-content{
-    justify-content: center;
-    padding:100px 0 200px 0;
-    margin-right: 0;
-    margin-left: 0;
-}
-
-.product-content img{
-    width:50%;
-    height:50%;
-
-}
-
-.product-section .overlay{
-    position: absolute;
-    top: 5em;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #131313;;
-}
-
-.title-img{
-    width: 100%;
-    margin-top:-10em
-}
-
-.product-content .product-footer{
-    width:20px;
-    height:2px;
-    background: #ffffff;
-    margin:0 auto;
-
-}
-
-.product-content .article-title > div h4{
-    font-size: 14px;
-    color: rgba(255,255,255,0.57);
-    margin:10px 0;
-}
-.product-content .article-title > div.active h4{
-    color: #FFFFFF;
-}
-
-.product-content .article-title > div.active .product_footer{
-    width:80px;
-    height:2px;
-    background: #fff;
-    display: inline-block;
-    vertical-align: middle;
-}
-.product-content .article-title > div.active .product_footer+div{
-    display: inline-block;
-    width:120px;
-    height:1px;
-    background: rgba(255,255,255,0.20);
-    vertical-align: middle;
-}
-
-.product-content .article-title > div span{
-    margin-right:30px;
-}
-
-.product-content .article-content > div{
-    display: none;
-    margin:10px 0;
-}
-
 a.button_box{
     border: 2px solid rgba(255,255,255,0.50);
     width:12em;
@@ -1325,25 +1229,6 @@ a.button_box{
     line-height:46px;
     margin-top:20px;
 }
-
-.goTop {
-    bottom: 180px;
-}
-.product-content .article-content > div.active{
-    display: block;
-}
-/*product--end*/
-
-
-
-
-
-
-
-
-
-
-
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
@@ -1376,10 +1261,10 @@ a.button_box{
     }
 
     .portfolio-items .portfolio-item {
+        width:50%;
         height: 280px;
         overflow: hidden;
         position: relative;
-        width: 33.33331%;
     }
 }
 
@@ -1430,26 +1315,31 @@ a.button_box{
     }
 
     .portfolio-items .portfolio-item {
+        width:50%;
         height: 280px;
         overflow: hidden;
         position: relative;
-        width: 33.33331%;
+    }
+    .section-header h2.water-mask {
+        font-size: 75px;
     }
 }
 
 
 @media only screen and (max-width: 767px) {
-    .navbar-brand{
-        float:none !important;
+    .navbar-brand {
+        float: none !important;
         width: 120px;
         font-size: 18px;
         line-height: 20px;
         margin-top: 20px;
     }
+
     .section-header {
         margin-bottom: 60px;
         text-align: center;
     }
+
     .navbar-toggle {
         border: 1px solid #fff;
     }
@@ -1466,9 +1356,11 @@ a.button_box{
         border-top: 0px solid transparent;
         box-shadow: 0 0px 0 rgba(255, 255, 255, 0) inset;
     }
-    .main-menu{
-        padding:0 !important;
+
+    .main-menu {
+        padding: 0 !important;
     }
+
     .main-menu .navbar-nav {
         float: none;
         padding: 10px 0;
@@ -1481,28 +1373,33 @@ a.button_box{
         padding: 8px 10px;
         background: rgb(26, 26, 25);
     }
-    .navbar-brand img{
-        margin:0;
+
+    .navbar-brand img {
+        margin: 0;
     }
-    .main-menu .navbar-nav li:last-child{
+
+    .main-menu .navbar-nav li:last-child {
         margin-bottom: 0;
     }
+
     .blurb-icon-only {
         margin-bottom: 50px;
     }
 
-    .blurb-icon-only:last-child{
+    .blurb-icon-only:last-child {
         margin-bottom: 0;
     }
+
     .blurb-icon-left-square .blurb-text {
         float: left;
         width: 61%;
     }
+
     .icon-container {
         margin-bottom: 50px;
     }
 
-    .icon-container:last-child{
+    .icon-container:last-child {
         margin-bottom: 0;
     }
 
@@ -1511,24 +1408,25 @@ a.button_box{
         margin-bottom: 50px;
     }
 
-    .process-item:last-child{
+    .process-item:last-child {
         margin-bottom: 0;
     }
+
     .cta-1 h2 {
         text-align: center;
         margin-bottom: 30px;
     }
 
-    .cta-1 p{
+    .cta-1 p {
         text-align: center;
         margin-bottom: 20px;
     }
 
-    .cta-1 .cta-btn{
+    .cta-1 .cta-btn {
         text-align: center;
     }
 
-    .cta-1 .cta-btn a{
+    .cta-1 .cta-btn a {
         float: none;
     }
 
@@ -1560,45 +1458,37 @@ a.button_box{
         position: relative;
         width: 100%;
     }
-    .service-wrapper > div{
+
+    .service-wrapper > div {
         margin-bottom: 50px;
     }
 
-
-    .footer > div:last-child .row.contact,.footer > div:last-child .content .row{
+    .footer > div:last-child .row.contact, .footer > div:last-child .content .row {
         justify-content: center;
     }
-    footer .footer p{
+
+    footer .footer p {
         text-align: center;
     }
-    .footer > div:last-child > div.content p{
+
+    .footer > div:last-child > div.content p {
         display: flex;
     }
-    .footer > div:last-child > div div{
-        color:rgba(255,255,255,0.6);
+
+    .footer > div:last-child > div div {
+        color: rgba(255, 255, 255, 0.6);
     }
 
-    .download-section .img-box{
+    .download-section .img-box {
         text-align: center;
-        margin:20px 0;
+        margin: 20px 0;
     }
-    .download-section .img-box+div{
-        margin:20px 0;
-    }
-
-    /*产品与服务*/
-    h2.water-mask.highlight-bg+h2 {
-        padding-top: 1em;
-        margin-bottom: 2em;
-        font-size: 1.8em;
-    }
-    .contact-section .contact-address {
-        margin-bottom: 50px;
+    .download-section .img-box + div {
+        margin: 20px 0;
     }
     .section-header h2.water-mask{
         font-size: 2.8em;
     }
-
 }
 
 
@@ -1607,5 +1497,13 @@ a.button_box{
     .portfolio-items .portfolio-item {
         width: 50%;
     }
-
+    a.button_box {
+        width: 8em;
+    }
+    .section-header h2.water-mask{
+        font-size: 3.5em;
+    }
+    mask.highlight-bg+h2 {
+        font-size: 2.8em;
+    }
 }
