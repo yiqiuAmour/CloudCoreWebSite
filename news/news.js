@@ -29,11 +29,19 @@ jQuery(document).ready(function() {
         itemSelector: '.grid-item',
         // use element for option
         columnWidth: '.grid-item',
-        percentPosition: true
+        // percentPosition: true,
+        isFitWidth:true
     });
     $grid.imagesLoaded().progress( function() {
         $grid.masonry('layout');
     });
+
+
+    var nodes=document.getElementsByClassName("multiline");
+    for(var i=0;i<nodes.length;i++){
+        $clamp(nodes[i],{clamp:4});
+    }
+
 
 
 });
