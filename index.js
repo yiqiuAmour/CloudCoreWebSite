@@ -14,6 +14,7 @@ jQuery(document).ready(function () {
             $('.goTop').css('display','none');
         }
     });
+    $(".goTop").click(function(){$("html,body").animate({scrollTop: 0}, 600);});
     /* -------- Appears Menu 滚动显示scroll ------ */
     $(window).on('ready , scroll', function () {
         if ($(window).scrollTop() > 100) {
