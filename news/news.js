@@ -22,4 +22,26 @@ jQuery(document).ready(function() {
         $('footer .content p').removeClass('active');
         $("footer .content p:eq("+ $(this).index() +")").addClass('active');
     })
+
+    //瀑布流
+    var $grid=$('.grid').masonry({
+        // set itemSelector so .grid-sizer is not used in layout
+        itemSelector: '.grid-item',
+        // use element for option
+        columnWidth: '.grid-item',
+        // percentPosition: true,
+        isFitWidth:true
+    });
+    $grid.imagesLoaded().progress( function() {
+        $grid.masonry('layout');
+    });
+
+
+    var nodes=document.getElementsByClassName("multiline");
+    for(var i=0;i<nodes.length;i++){
+        $clamp(nodes[i],{clamp:4});
+    }
+
+
+
 });
