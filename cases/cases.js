@@ -87,4 +87,12 @@ jQuery(document).ready(function() {
     //     $this.addClass('selected');
     // });
 
+    /*--------------底部切换-------------*/
+    $('.contact div').mouseover(function(){
+        $('.contact div').removeClass('active');
+        $(this).addClass('active');
+        $('footer .content p').removeClass('active');
+        $("footer .content p:eq("+ $(this).index() +")").addClass('active');
+    });
+
 });
