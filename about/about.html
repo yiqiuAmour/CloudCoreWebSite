@@ -41,7 +41,7 @@
                         <a class="nav-link" href="../index.html">首页</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../products/products.html">产品</a>
+                        <a class="nav-link" href="../products/products.html">产品及服务</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../cases/cases.html">案例</a>
@@ -49,7 +49,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../news/news.html">动态</a>
                     </li>
-
                     <li class="nav-item  active">
                         <a class="nav-link" href="#">我们</a>
                     </li>
@@ -200,25 +199,25 @@
         </div>
     </div>
 
-    <div data-wow-duration="2s">
+    <div class='animated fadeIn container case' data-wow-duration="2s">
         <!--button group-->
         <div class="portfolio-filter-btn-group ">
-            <div class="btn-group row" data-toggle="buttons-checkbox">
-                <div class="col-xs-3 col-sm-3">
+            <div class="btn-group row" style="width:400px;" data-toggle="buttons-checkbox">
+                <div class="col-md-3 col-sm-6 col-xs-12">
                     <button class="btn btn-inverse" id="beijing">北京</button>
                 </div>
-                <div class="col-xs-3 col-sm-3">
+                <div class="col-md-3 col-sm-6 col-xs-12">
                     <button class="btn btn-inverse" id="shenzhen">深圳</button>
                 </div>
-                <div class="col-xs-3 col-sm-3">
+                <div class="col-md-3 col-sm-6 col-xs-12">
                     <button class="btn btn-inverse" id="wuhan">武汉</button>
                 </div>
-                <div class="col-xs-3 col-sm-3">
+                <div class="col-md-3 col-sm-6 col-xs-12">
                     <button class="btn btn-inverse" id="ningbo">宁波</button>
                 </div>
             </div>
         </div>
-        <!-- Filter Button End -->
+        <!-- Filter  <dton End -->
         <div class="container" id="about_map">
             <div class="row beijing">
                 <div class="col-md-6 col-sm-6 col-xs-12">
@@ -326,15 +325,15 @@
             zoom: 15,
             center: [116.303399, 39.945248]
         });
-        var mapshenzhen = new AMap.Map('111', {
+        var mapshenzhen = new AMap.Map('111', {/*深圳*/
             zoom: 15,
             center: [114.119543, 22.542055]
         });
-        var mapwuhan = new AMap.Map('222', {
+        var mapwuhan = new AMap.Map('222', {/*武汉*/
             zoom: 15,
             center: [114.420921, 30.472624]
         });
-        var mapningbo = new AMap.Map('333', {
+        var mapningbo = new AMap.Map('333', {/*宁波*/
             zoom: 15,
             center: [122.008782, 29.781807]
         });
@@ -381,29 +380,47 @@
             $('.shenzhen').hide();
             $('.wuhan').hide();
             $('.ningbo').hide();
+            $('#beijing').css('background-color','#fff');
             $('#beijing').click(function () {
                 $('.beijing').show();
                 $('.shenzhen').hide();
                 $('.wuhan').hide();
                 $('.ningbo').hide();
+                $('#beijing').css('background-color','#fff');
+                $('#shenzhen').css('background-color','#28292e');
+                $('#wuhan').css('background-color','#28292e');
+                $('#ningbo').css('background-color','#28292e');
+
             });
             $('#shenzhen').click(function () {
                 $('.beijing').hide();
                 $('.shenzhen').show();
                 $('.wuhan').hide();
                 $('.ningbo').hide();
+                $('#beijing').css('background-color','#28292e');
+                $('#shenzhen').css('background-color','#fff');
+                $('#wuhan').css('background-color','#28292e');
+                $('#ningbo').css('background-color','#28292e');
             });
             $('#wuhan').click(function () {
                 $('.beijing').hide();
                 $('.shenzhen').hide();
                 $('.wuhan').show();
                 $('.ningbo').hide();
+                $('#beijing').css('background-color','#28292e');
+                $('#shenzhen').css('background-color','#28292e');
+                $('#wuhan').css('background-color','#fff');
+                $('#ningbo').css('background-color','#28292e');
             });
             $('#ningbo').click(function () {
                 $('.beijing').hide();
                 $('.shenzhen').hide();
                 $('.wuhan').hide();
                 $('.ningbo').show();
+                $('#beijing').css('background-color','#28292e');
+                $('#shenzhen').css('background-color','#28292e');
+                $('#wuhan').css('background-color','#28292e');
+                $('#ningbo').css('background-color','#fff');
             });
         })
     </script>
