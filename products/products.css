@@ -127,6 +127,7 @@ h2.highlight-bg+h2{
         width:0px;
     }
 }
+
 .bgnavproduce{
     background: #131313;
 }
@@ -153,6 +154,9 @@ h2.highlight-bg+h2{
 }
 .details img{
     width:100%;
+}
+.details .width_auto img{
+    width:auto;
 }
 .details .footer{
     border-top:1px solid #D9D9D9;
