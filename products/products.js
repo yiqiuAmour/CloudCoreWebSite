@@ -80,6 +80,7 @@ jQuery(document).ready(function() {
         clearInterval(content);
         move($(e.target).parents('div').index());
     },(e)=>{
+
         content=setInterval(move,2000);
     });
     $('.article-content > div').hover((e)=>{
