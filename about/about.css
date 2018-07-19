@@ -96,11 +96,11 @@
 /*background-color: #b292c5;*/
 /*}*/
 /*.timeline__item-bg:nth-child(2n) .timeline__item__content {*/
-    /*background-color: #61BC46;*/
+/*background-color: #61BC46;*/
 /*}*/
 
 /*.timeline__item-bg:nth-child(2n) .timeline__item__content::before {*/
-    /*background-color: #fff;*/
+/*background-color: #fff;*/
 /*}*/
 
 .timeline__item-bg:nth-child(2n) .timeline__item__content__description {
@@ -110,15 +110,15 @@
 /*.timeline__item-bg .timeline__item__station {*/
 /*background-color: #65adb7;*/
 /*}*/
- .timeline__item-bg+div:not(.timeline__item-bg) .timeline__item__content {
+.timeline__item-bg+div:not(.timeline__item-bg) .timeline__item__content {
     background-color:#61BC46 ;
 }
- .timeline__item:first-child .timeline__item__content{
-     background-color:#61BC46 ;
- }
+.timeline__item:first-child .timeline__item__content{
+    background-color:#61BC46 ;
+}
 
 /*.timeline__item.timeline__item-bg:first-child {*/
-    /*background-color:  rgba(255,255,255,0.10) ;*/
+/*background-color:  rgba(255,255,255,0.10) ;*/
 /*}*/
 
 
@@ -126,7 +126,7 @@
 
 
 /*.timeline__item-bg .timeline__item__content::before {*/
-    /*background-color: #fff;*/
+/*background-color: #fff;*/
 /*}*/
 
 .timeline__item-bg .timeline__item__content__description {
@@ -296,6 +296,7 @@
     background-color: #28292e;
     padding: 10px 20px;
     margin:20px;
+    border: 1px solid #333;
 }
 .portfolio-filter-btn-group  .btn-group button:hover{
     padding: 10px 20px;
