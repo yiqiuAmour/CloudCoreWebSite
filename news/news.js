@@ -116,7 +116,6 @@ jQuery(document).ready(function() {
         var windowHeight=$(this).height();
         var scrollHeight=$(document).height();
         if (scrollTop + windowHeight >= scrollHeight-80 && n<=max){
-            console.log('1');
             var html='';
             var len=data.length-(6*n-6)>=6 ? 6*n : 6*(n-1)+data.length-(6*n-6);
             for(var i=6*n-6;i<len;i++){
