@@ -112,11 +112,11 @@ jQuery(document).ready(function() {
     //滑动到底部加载更多
     $(window).scroll(function() {
         var max=Math.ceil(data.length/6);
-        var scrollTop=$(this).scrollTop();
+        var scrollTop=$(document).scrollTop();
         var windowHeight=$(this).height();
         var scrollHeight=$(document).height();
-        // if (scrollTop + windowHeight >= scrollHeight-170 && n<=max){
-        if (scrollTop + windowHeight == scrollHeight){
+        if (scrollTop + windowHeight >= scrollHeight-80 && n<=max){
+            console.log('1');
             var html='';
             var len=data.length-(6*n-6)>=6 ? 6*n : 6*(n-1)+data.length-(6*n-6);
             for(var i=6*n-6;i<len;i++){
